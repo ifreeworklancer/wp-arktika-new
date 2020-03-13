@@ -1,0 +1,50 @@
+$primary: #54cbc1;
+$secondary: #132a38;
+$secondary_light: #446b82;
+$dark: #333333;
+
+$sidebar-width-sm: 100%;
+$sidebar-width-md: 50%;
+$sidebar-width-lg: 350px;
+$sidebar-width: 445px;
+
+$body-color: $dark;
+$body-bg: #fff;
+
+$font-size-base: 1rem;
+$font-family-base: 'HelveticaNeueCyr', sans-serif;
+$headings-font-family: 'Ubuntu', sans-serif;
+$font-weight-base: normal;
+$headings-font-weight: bold;
+
+$link-color: #fff;
+$link-hover-decoration: none;
+
+$input-btn-border-width: 0;
+$input-btn-focus-width: 0;
+$input-btn-focus-color: rgba(#fff, 0);
+$input-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $input-btn-focus-color;
+$input-btn-font-family: $font-family-base;
+
+$btn-border-width: 1px;
+$border-radius: 25px;
+
+$btn-padding-x: 35px;
+$btn-padding-y: 20px;
+
+$h1-font-size: $font-size-base * 3;
+$h2-font-size: $font-size-base * 2.25;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1.125;
+$h6-font-size: $font-size-base * 1;
+
+$grid-breakpoints: (
+        xs: 0,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1400px
+);
+

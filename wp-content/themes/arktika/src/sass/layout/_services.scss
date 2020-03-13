@@ -1,0 +1,49 @@
+.services-item {
+  padding: 55px 0 70px;
+  position: relative;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    padding: 85px 0 100px;
+  }
+
+  .section-title {
+    text-transform: uppercase;
+    color: $secondary;
+    margin-bottom: 20px;
+  }
+}
+
+.services-images {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%;
+  margin-bottom: 20px;
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: 1600px) {
+    width: 40%;
+  }
+
+  &__item {
+    @extend %pos;
+    @extend %img;
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform .7s, opacity .5s;
+    pointer-events: none;
+
+    &.active {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+}

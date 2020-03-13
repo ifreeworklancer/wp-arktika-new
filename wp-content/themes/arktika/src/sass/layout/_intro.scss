@@ -1,0 +1,47 @@
+#intro {
+  @extend %img;
+  padding: 200px 0;
+  z-index: 5;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    height: 100vh;
+  }
+
+  &::before {
+    content: '';
+    @extend %pos;
+    background: rgba(#181b22, .4);
+  }
+}
+
+
+.intro-item {
+  position: relative;
+  transform: translateY(150%);
+  opacity: 0;
+  text-align: center;
+  transition: transform .7s, opacity .5s;
+
+  &__logo {
+    width: 100%;
+    max-width: 500px;
+    padding-bottom: 30px;
+    margin: 0 auto 30px;
+    border-bottom: 2px solid $primary;
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    color: #fff;
+  }
+
+  &.is-visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

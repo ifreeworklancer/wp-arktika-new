@@ -1,0 +1,22 @@
+@import "config/variables";
+@import "config/placeholders";
+
+@import "~bootstrap/scss/bootstrap";
+
+@import "base/body";
+@import "base/btn";
+@import "base/layout";
+
+@import "modules/forms";
+@import "modules/video";
+@import "modules/tabs";
+
+@import "layout/header";
+@import "layout/intro";
+@import "layout/sidebar";
+@import "layout/services";
+@import "layout/stock";
+@import "layout/about";
+@import "layout/footer";
+
+@import "layout/thanks";

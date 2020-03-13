@@ -1,0 +1,28 @@
+.contacts-list {
+  display: flex;
+  align-items: center;
+
+  li {
+    margin-right: 12px;
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      margin-right: 25px;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, xl)) {
+      margin-right: 35px;
+    }
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+
+    a {
+      font-size: .75rem;
+
+      @media (min-width: map_get($grid-breakpoints, md)) {
+        font-size: .875rem;
+      }
+    }
+  }
+}

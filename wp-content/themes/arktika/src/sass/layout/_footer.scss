@@ -1,0 +1,28 @@
+#app-footer {
+  padding-top: 220px;
+  background: url('../images/bg/footer-bg.jpg') 50% 50% /cover no-repeat;
+
+  &.footer-secondary {
+    padding-top: 0;
+    background: transparent;
+
+    .footer-wrapper {
+      margin-top: 0;
+    }
+  }
+}
+
+.footer-wrapper {
+  margin-top: 20px;
+  padding: 15px 0;
+  border-top: 1px solid rgba($primary, .3);
+}
+
+.footer-copyright {
+  font-size: .875rem;
+  color: #e0e0e0;
+
+  a {
+    color: #fff;
+  }
+}

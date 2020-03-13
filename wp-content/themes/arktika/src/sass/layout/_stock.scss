@@ -1,0 +1,58 @@
+#stock {
+  padding: 50px 0;
+  background: url('../images/bg/stock-bg.jpg') 50% 50% /cover no-repeat;
+
+  @media (min-width: map_get($grid-breakpoints, sm)) {
+    padding: 100px 0;
+  }
+
+  .section-title {
+    margin-bottom: 30px;
+    color: $primary;
+    text-transform: uppercase;
+  }
+}
+
+.stock-image {
+  max-width: 100%;
+  margin-bottom: 50px;
+
+  @media (min-width: map_get($grid-breakpoints, xxl)) {
+    margin-bottom: 0;
+  }
+}
+
+.stock-card {
+  overflow: hidden;
+  border-radius: 10px;
+  color: #fff;
+  margin-bottom: 30px;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    margin-bottom: 0;
+  }
+
+  &-prev {
+    width: 100%;
+  }
+
+  &-body {
+    padding: 15px 15px 30px;
+    background: rgba($secondary, .5);
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      min-height: 330px;
+      padding: 30px 30px 60px;
+    }
+  }
+
+  &__image {
+    @extend %img;
+    padding-bottom: 61.1111%;
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+  }
+}

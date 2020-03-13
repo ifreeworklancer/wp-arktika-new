@@ -1,0 +1,56 @@
+#app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 200;
+  padding: 15px 0;
+  transition: .5s;
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    padding: 25px $sidebar-width-lg 0 0;
+    position: absolute;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    padding-right: $sidebar-width;
+  }
+
+  &.header-secondary {
+    padding-right: 0;
+  }
+
+  &.is-scroll {
+
+    @media (max-width: map_get($grid-breakpoints, lg)) {
+      padding: 10px 0;
+      background: rgba($secondary, .8);
+    }
+  }
+
+  .btn {
+    padding: 15px 20px;
+    font-size: .75rem;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      padding: $btn-padding-y $btn-padding-x;
+      font-size: .875rem;
+    }
+  }
+
+}
+
+.logo {
+
+  img {
+    max-width: 120px;
+
+    @media (min-width: map_get($grid-breakpoints, sm)) {
+      max-width: 150px;
+    }
+
+    @media (min-width: map_get($grid-breakpoints, md)) {
+      max-width: 200px;
+    }
+  }
+}

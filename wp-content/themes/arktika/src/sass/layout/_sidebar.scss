@@ -1,0 +1,92 @@
+#app-sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 20px 25px;
+  width: $sidebar-width-sm;
+  height: 100%;
+  background: $secondary;
+  transform: translateY(-100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 500;
+  transition: .5s;
+
+  @media (min-width: map_get($grid-breakpoints, md)) {
+    width: $sidebar-width-md;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, lg)) {
+    transform: translateY(0);
+    width: $sidebar-width-lg;
+  }
+
+  @media (min-width: map_get($grid-breakpoints, xl)) {
+    width: $sidebar-width;
+  }
+
+  &.active {
+    transform: translateY(0);
+  }
+
+  .close-sidebar {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+
+    .line {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 20px;
+      height: 1px;
+      background: #fff;
+      opacity: .6;
+      transition: .5s;
+
+      &--left {
+        transform: rotate(-45deg) translateY(-50%);
+      }
+
+      &--right {
+        transform: rotate(45deg) translateY(-50%);
+      }
+    }
+
+    &:hover {
+
+      .line {
+        opacity: 1;
+      }
+    }
+  }
+
+  .sidebar-item {
+    width: 100%;
+    text-align: center;
+
+    &__title {
+      margin-bottom: 5px;
+      font-size: 1.5rem;
+      color: $primary;
+
+      @media (min-width: map_get($grid-breakpoints, lg)) {
+        font-size: 2.1875rem;
+      }
+    }
+
+    &__subtitle {
+      margin-bottom: 30px;
+      font-size: 1.25rem;
+      color: #fff;
+
+      @media (min-width: map_get($grid-breakpoints, lg)) {
+        font-size: 1.5625rem;
+        margin-bottom: 40px;
+      }
+    }
+  }
+}

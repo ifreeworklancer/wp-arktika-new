@@ -1,0 +1,39 @@
+#page-thanks {
+  @extend %img;
+  height: 100vh;
+
+  &::before {
+    content: '';
+    @extend %pos;
+    background: rgba(#181b22, .4);
+  }
+}
+
+.page-secondary-item {
+  position: relative;
+  text-align: center;
+
+  &__logo {
+    width: 100%;
+    max-width: 500px;
+    padding-bottom: 30px;
+    margin: 0 auto 30px;
+    border-bottom: 2px solid $primary;
+
+    img {
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    color: #fff;
+  }
+
+  &__subtitle {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.25rem;
+  }
+}

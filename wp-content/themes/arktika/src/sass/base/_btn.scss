@@ -1,0 +1,17 @@
+.btn {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 1;
+  font-size: .875rem;
+  text-transform: uppercase;
+  font-family: $font-family-base;
+  font-weight: bold;
+  transition: .5s;
+  z-index: 5;
+  
+  &-primary {
+    color: #fff;
+  }
+}
